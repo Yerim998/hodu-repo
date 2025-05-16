@@ -37,7 +37,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60vw;
+  width: 70vw;
   height: 102px;
 }
 
@@ -65,7 +65,7 @@ header {
 section {
   padding-top: 50px;
   background-color: #f2e9d8;
-  width: 60vw;
+  width: 70vw;
 }
 
 .main-1 {
@@ -114,7 +114,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  width: 60vw;
+  width: 70vw;
   height: auto;
 }
 
@@ -149,4 +149,29 @@ main {
 .content-1-text > p {
   font-size: 1rem;
   line-height: 1.2;
+}
+
+.content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.content-2 > h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d97652;
+}
+
+.content-2 > p {
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.content-2-span {
+  font-weight: bold;
+  color: #d97652;
 }
