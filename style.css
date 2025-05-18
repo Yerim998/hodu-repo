@@ -338,7 +338,7 @@ footer {
 
 /* 모달 스타일 시작 */
 .modal {
-  /* display: none; */
+  display: none;
 
   background-image: url(./img/modal-thanks.svg);
   background-size: cover;
@@ -352,15 +352,14 @@ footer {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 100;
   position: fixed;
-  width: 100%;
+  width: 80%;
   top: 50%;
-  left: 0;
-  margin: 15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-overlay {
-  /* display: none; */
-
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -409,6 +408,11 @@ footer {
   border-radius: 40px;
   padding: 15px 30px;
   margin-top: 38px;
+  cursor: pointer;
+}
+
+.modal:target {
+  display: block;
 }
 
 .modal:target ~ .modal-overlay {
