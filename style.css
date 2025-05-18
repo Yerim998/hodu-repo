@@ -65,13 +65,15 @@ header {
 section {
   padding-top: 50px;
   background-color: #f2e9d8;
-  width: 70vw;
+  min-width: 70vw;
 }
 
 .main-1 {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  gap: 8rem;
 }
 
 .main-1-text {
@@ -213,6 +215,7 @@ main {
   font-weight: bold;
   padding: 1rem 1.5rem;
   border-radius: 40px;
+  white-space: nowrap;
 }
 .content3-text-box > p {
   font-size: 1rem;
@@ -258,6 +261,7 @@ main {
 }
 
 .sub-text > h3 {
+  white-space: nowrap;
   font-weight: bold;
   font-size: 2rem;
   color: #ffffff;
