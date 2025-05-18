@@ -505,11 +505,15 @@ main {
 }
 
 .content3-img-box {
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
   gap: 10px;
   overflow-x: auto;
 }
 
 .content3-img-box > img {
+  flex: 0 0 auto;
   border-radius: 10px;
   width: 260px;
   height: auto;
