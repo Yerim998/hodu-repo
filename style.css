@@ -336,6 +336,10 @@ footer {
   list-style: none;
 }
 
+.mobile-only {
+  display: none;
+}
+
 /* 모달 스타일 시작 */
 .modal {
   display: none;
@@ -417,4 +421,96 @@ footer {
 
 .modal:target ~ .modal-overlay {
   display: block;
+}
+
+/* 모달 끝 */
+
+/* 미디어 쿼리 시작 */
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .web-only {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+  }
+  .header-nav {
+    display: none;
+  }
+
+  .main-1-text-a {
+    font-size: 24px;
+    word-break: keep-all;
+  }
+  .main-1 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .main-1-text {
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-1-text-b {
+    white-space: nowrap;
+  }
+}
+
+.main-1-img {
+  width: 197px;
+  height: 380px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+main {
+  width: 80vw;
+}
+
+.content-1 {
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: left;
+}
+
+.content-1 > img {
+  width: 100%;
+}
+
+.content-1-text {
+  text-align: left;
+}
+.content-1-text > h3 {
+  font-size: 1.5rem;
+}
+
+.content-2 > h3 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.header-bar {
+  width: 80vw;
+}
+
+.content3-img-box {
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.content3-img-box > img {
+  border-radius: 10px;
+  width: 260px;
+  height: auto;
 }
