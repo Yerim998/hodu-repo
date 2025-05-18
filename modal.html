@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>modal</title>
+    <link rel="reset" href="./reset.css" />
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
       article {
         background-image: url(./img/modal-thanks.svg);
         background-size: cover;
-        width: 100%;
+        background-position: center;
+        max-width: 600px;
         aspect-ratio: 600/400;
         border-radius: 40px;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+        align-content: center;
       }
 
       .hodu-blush {
@@ -25,16 +32,44 @@
       .container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 40px;
+      }
+
+      .container > h1 {
+        color: #d97652;
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 24px;
+        margin-bottom: 12px;
+      }
+
+      .container > p {
+        font-size: 14px;
+        margin: 0;
+      }
+
+      .container > button {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #d97652;
+        border-style: none;
+        border-radius: 40px;
+        padding: 15px 30px;
+        margin-top: 38px;
       }
     </style>
   </head>
   <body>
     <article>
-      <div class="contaier">
+      <div class="container">
         <div class="hodu-blush"></div>
         <h1>Thank you!</h1>
         <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-        <button>OK! I Love Hodu</button>
+        <button type="button">OK! I Love Hodu</button>
       </div>
     </article>
   </body>
