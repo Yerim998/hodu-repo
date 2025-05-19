@@ -428,6 +428,36 @@ footer {
 /* 모달 끝 */
 
 /* 미디어 쿼리 시작 */
+@media (max-width: 375px) {
+  html,
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  header,
+  main,
+  .header-bar,
+  .footer-bar {
+    width: 100vw !important;
+    min-width: 0 !important;
+    max-width: 100vw !important;
+    box-sizing: border-box;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .main-1-text {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .header-bar,
+  .main-1,
+  main {
+    gap: 0 !important;
+  }
+}
 @media (max-width: 768px) {
   .mobile-only {
     display: block;
@@ -457,8 +487,6 @@ footer {
   }
   .main-1-text {
     text-align: center;
-    padding-left: 5rem;
-    padding-right: 5rem;
     justify-content: center;
     align-items: center;
   }
@@ -545,6 +573,8 @@ footer {
     gap: 30px;
     top: 0%;
     transform: translate(-50%, -80%);
+    margin-top: 2rem;
+    margin-bottom: 5rem;
   }
 
   .sub-email-form {
